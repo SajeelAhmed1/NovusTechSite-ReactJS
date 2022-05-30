@@ -30,6 +30,7 @@ module.exports = {
         navBar: "#1d1e25",
         primary: "#121316",
         textBase: "#8f9091",
+
       },
     },
   },
