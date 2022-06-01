@@ -1,13 +1,20 @@
 import Spline from '@splinetool/react-spline';
-import {IoMenu,IoLogoGithub} from 'react-icons/io5'
+import {IoMenu,IoLogoGithub,IoPhonePortraitOutline} from 'react-icons/io5'
 import { useState } from 'react';
- import me from './assets/me.jpeg'
- import serviceComp from './serviceComp';
+import me from './assets/me.jpeg';
+import graphics from './assets/graphics.PNG';
+
+import appdev from './assets/appdev.PNG';
+
+import web from './assets/web.PNG';
+
+import marketing from './assets/marketing.PNG';
+// import ourserviceComp from './serviceComp';
+
 function App() {
 
   const [isActive, setIsActive] = useState(false);
-  
-  
+
   return (
     <div className="flex w-screen  min-h-screen flex-col items-center justif-center relative bg-primary pb-20 ">
       {/* navbar */}
@@ -64,13 +71,7 @@ function App() {
                 >
                   Contact
                 </a>
-                <a
-                  href="#"
-                  className="text-base text-textBase font-medium hover:text-slate-100 cursor-pointer border border-textBase px-2 py-1 rounded-xl hover:border-gray-100 duration-100 ease-in"
-                  onClick={() => setIsActive(false)}
-                >
-                  Download
-                </a>
+                
               </div>)}
         </div>
       </nav>
@@ -90,7 +91,7 @@ function App() {
             id="about"
           >
             <div className="w-full h-420 flex items-center justify-center">
-              <div className="w-275 h-340 relative bg-red-200 rounded-md">
+              <div className="w-275 h-340 relative bg-m -200 rounded-md">
                 <img
                   src={me}
                   alt=""
@@ -118,13 +119,13 @@ function App() {
             </div>
             </section>
         </main>
-      
+        <h1 className='text-m text-6xl'>Our Services</h1>
         <section
             className="flex flex-wrap items-center justify-evenly my-24 gap-4"
             id="projects"
           >
-            
-                <div
+            {/* new conatiner */}
+            <div
                   // key={n.id}
                   className="border border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out"
                 >
@@ -133,28 +134,32 @@ function App() {
                   </p>
 
                   <img
-                    src={me}
+                    src={appdev}
                     className="w-full h-full object-cover rounded-md my-4"
                     alt=""
                   />
 
-                  <div className="flex flex-1 items-center justify-between">
+                  {/* <div className="flex flex-1 items-center justify-between">
                     <p className="text-lg text-gray-300">
-                      Technologies
+                      heading
                       <span className="block text-sm text-gray-500">
-                        {/* {n.techs} */}
+                        info
                       </span>
                     </p>
                     <a 
-                    // href={n.github}
+                    
                     >
                       <div whileTap={{ scale: 0.5 }}>
                         <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />
                       </div>
                     </a>
-                  </div>
-                  
+                  </div> */}
                 </div>
+                
+                
+                  
+                
+                
                 {/* new conatiner */}
                 <div
                   // key={n.id}
@@ -165,28 +170,99 @@ function App() {
                   </p>
 
                   <img
-                    src={me}
+                    src={marketing}
                     className="w-full h-full object-cover rounded-md my-4"
                     alt=""
                   />
 
-                  <div className="flex flex-1 items-center justify-between">
+                  {/* <div className="flex flex-1 items-center justify-between">
                     <p className="text-lg text-gray-300">
-                      Technologies
+                      heading
                       <span className="block text-sm text-gray-500">
-                        {/* {n.techs} */}
+                        info
                       </span>
                     </p>
                     <a 
-                    // href={n.github}
+                    
                     >
                       <div whileTap={{ scale: 0.5 }}>
                         <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />
                       </div>
                     </a>
-                  </div>
+                  </div> */}
                 </div>
-                <serviceComp/>
+
+
+                {/* new conatiner */}
+                <div
+                  // key={n.id}
+                  className="border border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out"
+                >
+                  <p className="text-lg text-textBase font-medium uppercase">
+                    {/* {n.name.length > 25 ? `${n.name.slice(0, 25)}...` : n.name} */}
+                  </p>
+
+                  <img
+                    src={appdev}
+                    className="w-full h-full object-cover rounded-md my-4"
+                    alt=""
+                  />
+
+                  {/* <div className="flex flex-1 items-center justify-between">
+                    <p className="text-lg text-gray-300">
+                      heading
+                      <span className="block text-sm text-gray-500">
+                        info
+                      </span>
+                    </p>
+                    <a 
+                    
+                    >
+                      <div whileTap={{ scale: 0.5 }}>
+                        <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />
+                      </div>
+                    </a>
+                  </div> */}
+                </div>
+
+                {/* new conatiner */}
+                <div
+                  // key={n.id}
+                  className="border border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out"
+                >
+                  <p className="text-lg text-textBase font-medium uppercase">
+                    {/* {n.name.length > 25 ? `${n.name.slice(0, 25)}...` : n.name} */}
+                  </p>
+
+                  <img
+                    src={graphics}
+                    className="w-full h-full object-cover rounded-md my-4"
+                    alt=""
+                  />
+
+                  {/* <div className="flex flex-1 items-center justify-between">
+                    <p className="text-lg text-gray-300">
+                      heading
+                      <span className="block text-sm text-gray-500">
+                        info
+                      </span>
+                    </p>
+                    <a 
+                    
+                    >
+                      <div whileTap={{ scale: 0.5 }}>
+                        <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />
+                      </div>
+                    </a>
+                  </div> */}
+                </div>
+
+
+                
+                
+                {/* <ourserviceComp/> */}
+                
+                
               
           </section>
             

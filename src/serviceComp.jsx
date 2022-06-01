@@ -1,11 +1,10 @@
 import React from 'react'
-import Spline from '@splinetool/react-spline';
-import {IoMenu,IoLogoGithub} from 'react-icons/io5'
-import { useState } from 'react';
+import {IoLogoGithub} from 'react-icons/io5'
+
  import me from './assets/me.jpeg'
 
 
-export default function serviceComp() {
+export default function ourserviceComp() {
   return (
     <div
                   // key={n.id}
