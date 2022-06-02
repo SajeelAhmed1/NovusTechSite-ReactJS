@@ -10,67 +10,7 @@ body {
 
 
 
-/* .container {
-  width: 100%;
-  height: 100%;
-  padding: 0px 8%;
-}
 
-.container h1 {
-  text-align: center;
-  padding-top: 10%;
-  margin-bottom: 60px;
-  font-weight: 600;
-  position: relative;
-}
-
-.container h1::after {
-  content: '';
-  background: #303ef7;
-  width: 100px;
-  height: 5px;
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-  .row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 30px;
-  }
-
-.service {
-  text-align: center;
-  padding: 25px 10px;
-  border-radius: 5px;
-  font-size: 14px;
-  cursor: pointer;
-  background: transparent;
-  transition: transform 0.5s, background 0.5s;
-}
-
-.service i {
-  font-size: 40px;
-  margin-bottom: 10px;
-  color: #eaedf0;
-}
-
-.service h2 {
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-.service:hover {
-  background: #303ef7;
-  color: #fff;
-  transform: scale(1.05);
-}
-
-.service:hover i {
-  color: #fff;
-} */
 
 .service {
   /* width: 100%;
@@ -89,16 +29,25 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 30px;
 }
+.u{
+  background: -webkit-linear-gradient(#FFA500, rgb(45, 147, 231));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .service i {
   font-size: 40px;
   margin-bottom: 10px;
-  color: #fff;
+  color: #ffff;
   
 }
 .service h2 {
   font-weight: 600;
   margin-bottom: 8px;
+  color: #fff;
+}
+.ptext{
+  color: #fff;
 }
 .service:hover {
   background: #FFA500;
@@ -106,7 +55,7 @@ body {
   transform: scale(1.05);
 }
 .service:hover i {
-  color: rgb(19, 15, 15);
+  color: rgb(9, 7, 7);
 }
 
 
@@ -119,9 +68,7 @@ body::-webkit-scrollbar, html::-webkit-scrollbar{
   display: none
 }
 .cont{
-  height: 250px;
-  width: 250px;
-  background-color: aqua
+  padding: 50px 8%
 }
 
 @tailwind base;
