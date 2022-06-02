@@ -1,7 +1,7 @@
 import Spline from '@splinetool/react-spline';
 import {IoMenu} from 'react-icons/io5'
 import { useState } from 'react';
-import me from './assets/me.jpeg';
+import novuslogo from './assets/novuslogo.jpg';
 
 
 function App() {
@@ -13,16 +13,16 @@ function App() {
       {/* navbar */}
       <nav className='w-full px-6 z-50  fixed inset-x-0 top-2 flex justify-center items-center'>
         <div className='w-full md:w-880 bg-navBar p-4 rounded-2xl flex items-center'>
-          <p className="text-lg text-slate-200 font-medium">Novus Tech</p>
+          <p className="text-lg text-m  font-medium">Novus Tech</p>
           <div className="hidden md:flex items-center gap-6 ml-6 flex-1">
               <a href="#home"
-                className="text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in"
+                className="text-base text-textBase font-medium hover:text-m cursor-pointer duration-100 ease-in"
               > Home</a>
               <a href="#home"
-                className="text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in"
+                className="text-base text-textBase font-medium hover:text-m cursor-pointer duration-100 ease-in"
               > About</a>
               <a href="#home"
-                className="text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in"
+                className="text-base text-textBase font-medium hover:text-m cursor-pointer duration-100 ease-in"
               > Contact</a>
           </div>
           <div
@@ -71,7 +71,10 @@ function App() {
       <div className="relative " id="home" > 
       
       {/* new bg */}
+      
       <Spline scene="https://prod.spline.design/hiKd3KfSG2B49b-s/scene.splinecode" />
+
+ 
   
       {/* <Spline scene="https://prod.spline.design/BdDckWFpugA51Fok/scene.splinecode" /> */}
       <div className="absolute bottom-10 w-full flex justify-center items-center">
@@ -88,7 +91,7 @@ function App() {
             <div className="w-full h-420 flex items-center justify-center">
               <div className="w-275 h-340 relative bg-m -200 rounded-md">
                 <img
-                  src={me}
+                  src={novuslogo}
                   alt=""
                   className="w-full h-full absolute -right-4 top-4 object-cover rounded-lg drop-shadow-2xl"
                 />
@@ -112,7 +115,7 @@ function App() {
             className="flex flex-wrap items-center justify-evenly my-24 gap-4"
             id="projects"
           >
-        <div className='cont'>
+        {/* <div className='cont'> */}
                 <div class="service">
                 <i class="fas fa-laptop-code"></i>
                 <h2>Web Design</h2>
@@ -145,7 +148,7 @@ function App() {
                     quae?
                 </p>
                 </div>
-            </div>
+            {/* </div> */}
 
                 
                 
